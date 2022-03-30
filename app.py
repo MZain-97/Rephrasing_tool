@@ -59,7 +59,7 @@ elif slt.checkbox("Only_Text"):
                 with slt.spinner("ZAINX.."):
                 
                     df = translate.preprocess(text_file)
-                    slt.dataframe(df)
+                    
                     data1,english = translate.translate(df)
                     slt.header("Repharased")
                     eng=' '.join([str(elem) for elem in english])
